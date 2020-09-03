@@ -1,0 +1,193 @@
+.test-title {
+    width: 100%;
+    font-size: 40rpx;
+    text-align: left;
+    text-indent: 40rpx;margin:30rpx;
+    line-height:80rpx;
+    color:#333}
+
+.question {
+    width: 66%;
+    height:80rpx;
+    line-height:80rpx;
+    font-size: 32rpx;
+    text-align: center;
+    background: rgba(211,211,211,0.4);
+    margin:60rpx auto;
+    display: block;
+    color:#000;
+    font-weight:bold;
+
+}
+
+radio-group {
+    width: 100%;
+    font-size: 31rpx;
+
+}
+
+.radio {
+ 
+    display: block;
+    margin: 0 60rpx;
+    border-bottom: 1px solid #ccc;
+    padding: 20rpx;
+}
+
+.radio:nth-child(2n-1) {
+    background-color: #fdfdfd;
+}
+
+.radio:nth-child(1) {
+    border-top: 1px solid #ccc;
+}
+
+.area-desc {
+    /* position: fixed;
+    bottom: 180rpx; */
+     margin-top: 120rpx;
+    border: none;
+    padding: 0 60rpx;
+    left: 0;
+}
+.question1 {
+    width: 100%;
+    font-size: 40rpx;
+    text-indent: 40rpx;
+    text-align: left;
+    color: #14A1FF;
+    font-weight: bold;
+    margin-top: 40rpx;
+    margin-bottom: 60rpx;
+}
+.desc {
+    font-size: 26rpx;
+    color: #a0a0a0;
+    margin: 20rpx 0rpx 40rpx;
+}
+
+.desc-title {
+    font-size: 28rpx;
+    margin-top: 25rpx;
+    color: #333;
+    display: block;
+}
+
+.retest {
+    display: block;
+    position: fixed;
+    bottom: 90rpx;
+    right: 120rpx;
+     border-color: #d9ecff;
+    background-color: #ecf5ff;
+    color: #409EFF;
+    font-size: 37rpx;
+
+}
+
+.lastStep {
+    display: block;
+    position: fixed;
+    bottom: 90rpx;
+    left: 120rpx;
+    border-color: #d9ecff;
+    background-color: #ecf5ff;
+    color: #409EFF;
+    font-size: 37rpx;
+
+}
+
+.pop-up {
+   width: 100%;
+text-align: center;
+
+}
+
+.pop-up .question {
+    margin-top: 60rpx;
+    margin-bottom: 30rpx;
+}
+
+.pop-up text {
+    display: block;
+    text-indent: 40rpx;
+}
+
+.result-def {
+    font-size: 48rpx;
+    margin-bottom: 40rpx;
+    color: #00aeff;
+}
+
+button {
+    height: 80rpx;
+    width: 240rpx;
+    line-height: 80rpx;
+}
+
+/*radio未选中时样式 */
+radio .wx-radio-input{ 
+ /* 自定义样式.... */
+/* 我这里没有进行，未选中的样式修改
+  height: 40rpx; 
+  width: 40rpx;
+  margin-top: -4rpx;
+  border-radius: 50%;
+  border: 2rpx solid #999;
+  background: transparent;
+   */
+ 
+ }
+ 
+ 
+/* 选中后的 背景样式 （红色背景 无边框 可根据UI需求自己修改） */
+radio .wx-radio-input.wx-radio-input-checked {
+  /* border: none; */
+  border-color: #2792ff!important;
+  /* background-color: #fff!important; */
+  /* background-color: transparent!important; */
+  /* 居中 */
+/* 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  */
+   
+}
+ 
+/* 选中后的 对勾样式 （白色对勾 可根据UI需求自己修改） */
+radio .wx-radio-input.wx-radio-input-checked::before {
+ /* 去除对号 */
+ content: ''; 
+ /* background: #fff; */
+ width: 36rpx;
+ height: 36rpx;
+ border-radius: 50%;
+ /* background: red; */
+ background-color: #2792ff;
+ /* 居中 */
+ /* margin-top: 0rpx; */
+ /* display: flex; */
+ /* position: relative; */
+  
+}
+.conditionPagefailIcon {
+    width: 150px;
+    height: 158px;
+    margin-top: 20%;
+}
+
+.conditionPageSussIcon {
+    width: 225px;
+    height: 184px;
+    margin-top: 12%;
+}
+
+.conditionText {
+   color: red;
+    font-size: 16px;
+    display: block;
+}
+.successFont{
+ color: red; 
+}

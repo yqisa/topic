@@ -1,0 +1,29 @@
+<view class="container" wx:if="{{!showResult}}">
+   
+    <text class="question">{{current.question}}</text>
+    <radio-group bindchange="radioChange" class="radio-group">
+        <label class="radio" wx:for="{{current.options}}">
+            <radio checked="{{checked}}" value="{{index}}" color="#fff" style=" transform:scale(0.8);"></radio>
+            <text>{{item.answer}}</text>
+        </label>
+    </radio-group>
+</view>
+
+<view class="pop-up" wx:if="{{showResult}}">
+    <view>
+    <image class="conditionPageSussIcon" src="{{result.zgsrc}}"></image>
+    </view>
+    <text class="conditionText">{{result.title}}</text>
+    <!-- <text class="result-def">{{result.area}}</text> -->
+</view>
+<view class="area-desc">
+    <text class="desc-title">非限购区域：</text>
+    <text class="desc">万达、星巴克</text>
+    <text class="desc-title">限购区域：</text>
+    <text class="desc">市区(上下城、绕城)</text>
+</view>
+<view class="container" wx:if="{{!current.isFirst}}">
+    <button bindtap="lastStep" class="lastStep">上一步</button>
+    <button bindtap="retest" class="retest">重新测试</button>
+      
+</view>
